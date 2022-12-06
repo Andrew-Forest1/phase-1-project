@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     fetch('http://localhost:3000/species')
     .then(res => res.json())
-    .then(data => data.results.forEach(renderSpecies))
+    .then(data => data.forEach(renderSpecies))
     
     r2.addEventListener('mouseenter', (e) => {
         e.target.classList.remove('pictures')
