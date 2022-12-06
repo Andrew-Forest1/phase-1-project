@@ -13,22 +13,54 @@
 
     <div id="species-detail"> <!-- This Block displays the Details of the species selected, still needs work and is currently hard coded -->
       <img class="detail-image" src="./Luke Skywalker.png" alt="Species Picture" />
-      <h2 class="name">Luke Skywalker</h2>
-      <h3 class="restaurant">Human</h3>
+      <h2 class="name">Wookie</h2>
+      <!-- <h3 class="restaurant">Wookie</h3> -->
       <p>average_height: 2.1</p>
       <p>average_lifespan: 400</p>
       <p>classification: Mammal</p>
       <p>designation: Sentient</p>
       <p>eye_colors: blue, green, yellow, brown, golden, red</p>
-      <p>hair Colors: blck, brown</p>
+      <p>hair_colors: blck, brown</p>
+      <p>homeworld: </p>
+      <p>language: "shyriiwook</p>
+      <p>people: </p>
+      <p>films: </p>
+      <p>skin_colors: gray</p>
     </div>
 
-    <Img id="R2-D2" class="pictures" src="./R2-D2.png" alt="R2-D2 Picture"></Img>
-    <Img class="pictures" src="./Luke Skywalker.png" alt="Luke Skywalker Picture"></Img>
-<!--     <div id="ramen-detail">
-        <img class="detail-image" src="./assets/image-placeholder.jpg" alt="Insert Name Here" />
-        <h2 class="name">Insert Name Here</h2>
-        <h3 class="restaurant">Insert Restaurant Here</h3>
-      </div> -->
-</body>
+    <!-- <Img id="R2-D2" class="pictures" src="./R2-D2.png" alt="R2-D2 Picture"></Img>
+    <Img class="pictures" src="./Luke Skywalker.png" alt="Luke Skywalker Picture"></Img> -->
+
+    <form id="new-species">
+      <h4>Add New Species</h4>
+      <label for="name">Name: </label>
+      <input type="text" name="name" id="new-name" />
+      <label for="averageHeight">Average Height: </label>
+      <input type="text" name="averageHeight" id="averageHeight" />
+      <label for="averageLifespan">Average Lifespan: </label>
+      <input type="text" name="averageLifespan" id="averageLifespan" />
+      <label for="classification">Classification: </label>
+      <input type="text" name="classification" id="classification" />
+      <label for="designation">Designation: </label>
+      <input type="text" name="designation" id="designation" />
+      <label for="eyeColors">Eye Colors: </label>
+      <input type="text" name="eyeColors" id="eyeColors" />
+      <label for="hairColors">Hair Colors: </label>
+      <input type="text" name="hairColors" id="hairColors" />
+      <label for="homeworld">Homeworld: </label>
+      <input type="text" name="homeworld" id="homeworld" />
+      <label for="language">language: </label>
+      <input type="text" name="language" id="language" />
+      <label for="people">people: </label>
+      <input type="text" name="people" id="people" />
+      <label for="films">films: </label>
+      <input type="text" name="films" id="films" />
+      <label for="skinColors">Skin Colors: </label>
+      <input type="text" name="skinColors" id="skinColors" />
+      <label for="image">Image: </label>
+      <input type="text" name="image" id="new-image" />
+      <input type="submit" value="Create" />
+    </form>
+
+  </body>
 </html>
