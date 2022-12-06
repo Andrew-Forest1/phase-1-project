@@ -1,0 +1,13 @@
+.pictures {
+    flex: 0 1 auto;
+    height: 150px;
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+
+.hover {
+    flex: 0 1 auto;
+    height: 200px;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
