@@ -16,7 +16,7 @@ body {
   background: url("./Star Wars.png"); /*Star Wars Background image, delete to make text on webpage more visable */
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  color: #fafafa;
+  color: #fafafa; /*Text color*/
   padding: 1rem;
   text-align: center;
   background-color: #fafafa;
