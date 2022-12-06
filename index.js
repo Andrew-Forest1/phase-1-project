@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById("container")
     const r2 = document.getElementById("R2-D2")
-
+    
     fetch('https://swapi.dev/api/species')
     .then(res => res.json())
     .then(data => data.results.forEach(renderSpecies))
