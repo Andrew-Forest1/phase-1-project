@@ -12,6 +12,10 @@
     cursor: pointer;
 }
 
+#detail_container {
+  background-color: #00000083;
+}
+
 body {
   background: url("./Star Wars.png"); /*Star Wars Background image, delete to make text on webpage more visable */
   background-repeat: no-repeat;
@@ -31,7 +35,7 @@ form {
   width: 300px;
   display: flex;
   flex-direction: column;
-  column-count: 2;
+  background-color: #0000008a;
   align-items: flex-start;
 }
 
