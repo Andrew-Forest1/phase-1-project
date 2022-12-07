@@ -1,13 +1,13 @@
 .pictures {
     flex: 0 1 auto;
-    height: 150px;
+    height: 10rem;
     margin-right: 0.5rem;
     cursor: pointer;
   }
 
 .hover {
     flex: 0 1 auto;
-    height: 200px;
+    height: 15rem;
     margin-right: 0.5rem;
     cursor: pointer;
 }
@@ -84,4 +84,15 @@ form h4 {
   font-weight: bold;
   font-size: 1.5rem;
   font: black;
+}
+
+.card {
+  text-align: center;
+  border: grey solid 1px;
+  padding: 1rem;
+  /* width: 10rem;  */
+  /* height: 15rem; */
+  display: inline-grid;
+  margin: 1rem 1rem; 
+  box-shadow: 3px 4px #fcfcfc
 }

@@ -15,18 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const people = document.getElementById("people");
   const films = document.getElementById("films");
   const skinColor = document.getElementById("skin-colors");
-
-  //const r2 = document.getElementById("R2-D2")
+  const specieForm = document.getElementById("new-species");
 
 
   fetch("http://localhost:3000/species")
     .then((res) => res.json())
     .then((data) => data.forEach(renderSpecies));
-
-    r2.addEventListener('mouseleave', (e) => {
-        e.target.classList.remove('hover')
-        e.target.classList.add('pictures')
-    }) */
     
     specieForm.addEventListener('submit', (e) => {
         e.preventDefault()
@@ -94,10 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(response => response.json())
         .then(data => renderSpecies(data))
     }
-})
 
-    container.appendChild(newImg);
-  };
   const displayDetails = (specieObj) => {
     const detailImg = document.getElementById("detail-image");
     detailImg.src = specieObj.image;
@@ -116,9 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
     skinColor.innerText = specieObj.skin_colors;
     // speciesDetails.appendChild(newImg);
   };
-  const handleClick = (specieObj) => {
-    displayDetails(specieObj);
-  };
+
 });
 
 console.log("yo");
