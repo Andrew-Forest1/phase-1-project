@@ -64,3 +64,12 @@ form h4 {
   color: white;
   background-color: black;
 }
+
+.card {
+  text-align: center;
+  border: grey solid 1px;
+  padding: 1rem;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  box-shadow: 3px 4px #ffffff
+}

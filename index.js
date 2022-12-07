@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         newImg.innerText = specieObj.name
         newImg.src = specieObj.image
         newImg.alt = specieObj.name
+        newImg.classList.add("card")
         newImg.classList.add('pictures')
 
         newImg.addEventListener('mouseleave', (e) => {
