@@ -3,17 +3,48 @@
   <head>
     <meta charset="utf-8" />
     <title>Star Wars</title>
+    <style>
+      div.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: -999;
+        padding: 50px;
+        text-align: center;
+        font-size: 150px;
+        margin-bottom: -70px;
+    }
+   
+      div.scroll {
+        width: 200px;
+        height: 250px;
+        overflow-x: scroll;
+        overflow-y: auto;
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+        color: yellow;
+        float: right;
+        
+      }
+    </style>
+    <div>
+    <img id="title" src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Star_Wars_Logo..png" alt="logo" />
     <script  src="./index.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
-    <div id="container">
-        
     </div>
-
+  </head>
+  
+  <body>
+    
+    <div id="container" class="character-container">
+      <span class="line"></span>
+        
+  </div>
+    
     <div id="species-detail" class="details"> 
       <img id="detail-image" src="./Luke Skywalker.png" alt="picture"/><!-- This Block displays the Details of the species selected, still needs work and is currently hard coded -->
-      
+      <div class="scroll">
       <h2 id="name" class="name">Wookie</h2>
       <!-- <h3 class="restaurant">Wookie</h3> -->
       <p id="height">average_height: 2.1</p>
@@ -23,15 +54,16 @@
       <p id="eye-color">eye_colors: blue, green, yellow, brown, golden, red</p>
       <p id="hair-color">hair_colors: blck, brown</p>
       <p id="homeworld">homeworld: </p>
-      <p id="language">language: "shyriiwook</p>
+      <p id="language">language: "shyriiwook"</p>
       <p id="people">people: </p>
       <p id="films">films: </p>
       <p id="skin-colors">skin_colors: gray</p>
+      </div>
     </div>
-
+    
     <!-- <Img id="R2-D2" class="pictures" src="./R2-D2.png" alt="R2-D2 picture"></Img>
     <Img class="pictures" src="./Luke Skywalker.png" alt="Luke Skywalker picture"></Img> -->
-
+  
     <form id="new-species">
       <h4>Add New Species</h4>
       <label for="name">Name: </label>
@@ -62,6 +94,7 @@
       <input type="text" name="image" id="new-image" />
       <input type="submit" value="Create" />
     </form>
-
+  
   </body>
+
 </html>

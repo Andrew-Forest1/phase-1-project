@@ -15,7 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const people = document.getElementById("people");
   const films = document.getElementById("films");
   const skinColor = document.getElementById("skin-colors");
-
+  const specieForm = document.getElementById("new-species")
+  
+  
   //const r2 = document.getElementById("R2-D2")
 
 
@@ -23,11 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((res) => res.json())
     .then((data) => data.forEach(renderSpecies));
 
-    r2.addEventListener('mouseleave', (e) => {
-        e.target.classList.remove('hover')
-        e.target.classList.add('pictures')
-    }) */
-    
+
+
+   
     specieForm.addEventListener('submit', (e) => {
         e.preventDefault()
         //debugger
@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
         newImg.innerText = specieObj.name
         newImg.src = specieObj.image
         newImg.alt = specieObj.name
+        newImg.classList.add('card')
         newImg.classList.add('pictures')
 
 
@@ -93,10 +94,10 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(response => response.json())
         .then(data => renderSpecies(data))
     }
-})
 
-    container.appendChild(newImg);
-  };
+
+    
+  
   const displayDetails = (specieObj) => {
     const detailImg = document.getElementById("detail-image");
     detailImg.src = specieObj.image;
@@ -118,6 +119,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const handleClick = (specieObj) => {
     displayDetails(specieObj);
   };
-});
+})
 
-console.log("yo");
+

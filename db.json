@@ -91,7 +91,7 @@
     },
     {
       "name": "Rodian",
-      "image": "https://static.wikia.nocookie.net/starwars/images/d/d3/Rodian_DICE.png/revision/latest?cb=20151106032702",
+      "image": "https://i.pinimg.com/originals/88/2e/ff/882eff908dfaa5314a192eaa0d63d661.png",
       "classification": "sentient",
       "designation": "reptilian",
       "average_height": "170",
@@ -234,7 +234,7 @@
     },
     {
       "name": "Sullustan",
-      "image": "https://static.wikia.nocookie.net/starwars/images/9/9c/Sullustan_DICE.png/revision/latest?cb=20151106031005",
+      "image": "https://static.wikia.nocookie.net/starwars/images/b/b7/Talo_BtR.png/revision/latest?cb=20180926022951",
       "classification": "mammal",
       "designation": "sentient",
       "average_height": "180",
@@ -280,3 +280,11 @@
     }
   ]
 }
+   
+    
+    
+    
+  
+  
+  
+  
