@@ -12,10 +12,6 @@
     cursor: pointer;
 }
 
-#detail_container {
-  background-color: #000000;
-}
-
 body {
   background: url("./Star Wars.png"); /*Star Wars Background image, delete to make text on webpage more visable */
   background-repeat: no-repeat;
@@ -29,6 +25,8 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+
 
 form {
   margin: 1rem 0;
@@ -68,23 +66,38 @@ form h4 {
   color: white;
   background-color: black;
 }
+
 #detail-image{
-  
-  height: 300px;
+  height: 25rem;
 }
-.details {
+
+/* .details {
   background-color: gray;
   font-style: bold;
   opacity: 0.4;
   background-attachment: fixed;
   
   padding : 100px;
+} */
+
+h2{
+  font-size: 3rem;
+  font-weight: 300;
+  font-family: fantasy;
+  background-color: #000000b9;
 }
-.name{
+
+table{
+  font-size: 2rem;
+  font-weight: 300;
+  background-color: #000000b9;
+}
+
+/* .name{
   font-weight: bold;
   font-size: 1.5rem;
   font: black;
-}
+} */
 
 .card {
   text-align: center;
