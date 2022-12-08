@@ -10,7 +10,7 @@
       "hair_colors": "blonde, brown, black, red",
       "eye_colors": "brown, blue, green, hazel, grey, amber",
       "average_lifespan": "120",
-      "homeworld": "https://swapi.dev/api/planets/9/",
+      "homeworld": "Coruscant",
       "language": "Galactic Basic",
       "people": [
         "https://swapi.dev/api/people/66/",
@@ -72,7 +72,7 @@
       "hair_colors": "black, brown",
       "eye_colors": "blue, green, yellow, brown, golden, red",
       "average_lifespan": "400",
-      "homeworld": "https://swapi.dev/api/planets/14/",
+      "homeworld": "Kashyyyk",
       "language": "Shyriiwook",
       "people": [
         "https://swapi.dev/api/people/13/",
@@ -99,7 +99,7 @@
       "hair_colors": "n/a",
       "eye_colors": "black",
       "average_lifespan": "unknown",
-      "homeworld": "https://swapi.dev/api/planets/23/",
+      "homeworld": "Rodia",
       "language": "Galatic Basic",
       "people": [
         "https://swapi.dev/api/people/15/"
@@ -122,7 +122,7 @@
       "hair_colors": "n/a",
       "eye_colors": "yellow, red",
       "average_lifespan": "1000",
-      "homeworld": "https://swapi.dev/api/planets/24/",
+      "homeworld": "Nal Hutta",
       "language": "Huttese",
       "people": [
         "https://swapi.dev/api/people/16/"
@@ -146,7 +146,7 @@
       "hair_colors": "brown, white",
       "eye_colors": "brown, green, yellow",
       "average_lifespan": "900",
-      "homeworld": "https://swapi.dev/api/planets/28/",
+      "homeworld": "unknown",
       "language": "Galactic basic",
       "people": [
         "https://swapi.dev/api/people/20/"
@@ -173,7 +173,7 @@
       "hair_colors": "none",
       "eye_colors": "yellow, orange",
       "average_lifespan": "unknown",
-      "homeworld": "https://swapi.dev/api/planets/29/",
+      "homeworld": "Trandosha",
       "language": "Dosh",
       "people": [
         "https://swapi.dev/api/people/24/"
@@ -196,7 +196,7 @@
       "hair_colors": "none",
       "eye_colors": "yellow",
       "average_lifespan": "unknown",
-      "homeworld": "https://swapi.dev/api/planets/31/",
+      "homeworld": "Mon Cala",
       "language": "Mon Calamarian",
       "people": [
         "https://swapi.dev/api/people/27/"
@@ -219,7 +219,7 @@
       "hair_colors": "white, brown, black",
       "eye_colors": "orange, brown",
       "average_lifespan": "unknown",
-      "homeworld": "https://swapi.dev/api/planets/7/",
+      "homeworld": "Endor",
       "language": "Ewokese",
       "people": [
         "https://swapi.dev/api/people/30/"
@@ -242,7 +242,7 @@
       "hair_colors": "none",
       "eye_colors": "black",
       "average_lifespan": "unknown",
-      "homeworld": "https://swapi.dev/api/planets/33/",
+      "homeworld": "Sullust",
       "language": "Sullutese",
       "people": [
         "https://swapi.dev/api/people/31/"
@@ -265,7 +265,7 @@
       "hair_colors": "none",
       "eye_colors": "red, pink",
       "average_lifespan": "unknown",
-      "homeworld": "\"https://swapi.dev/api/planets/18/\"",
+      "homeworld": "Cato Neimoidia",
       "language": "Neimoidia",
       "people": [
         "Alluv Eyam"
@@ -276,7 +276,7 @@
       "created": "2014-12-10T13:52:11.567000Z",
       "edited": "2014-12-20T21:36:42.136000Z",
       "url": "https://swapi.dev/api/species/1/",
-      "id": "Lf_TVTV"
+      "id": "6aru2da"
     }
   ]
 }

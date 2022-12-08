@@ -15,19 +15,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const people = document.getElementById("people");
   const films = document.getElementById("films");
   const skinColor = document.getElementById("skin-colors");
-  const specieForm = document.getElementById("new-species")
-  
-  
-  //const r2 = document.getElementById("R2-D2")
+  const specieForm = document.getElementById("new-species");
 
 
   fetch("http://localhost:3000/species")
     .then((res) => res.json())
     .then((data) => data.forEach(renderSpecies));
 
-
-
-   
     specieForm.addEventListener('submit', (e) => {
         e.preventDefault()
         //debugger
@@ -60,7 +54,9 @@ document.addEventListener("DOMContentLoaded", () => {
         newImg.innerText = specieObj.name
         newImg.src = specieObj.image
         newImg.alt = specieObj.name
+
         newImg.classList.add('card')
+
         newImg.classList.add('pictures')
 
 
@@ -95,9 +91,6 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(data => renderSpecies(data))
     }
 
-
-    
-  
   const displayDetails = (specieObj) => {
     const detailImg = document.getElementById("detail-image");
     detailImg.src = specieObj.image;
@@ -116,9 +109,8 @@ document.addEventListener("DOMContentLoaded", () => {
     skinColor.innerText = specieObj.skin_colors;
     // speciesDetails.appendChild(newImg);
   };
-  const handleClick = (specieObj) => {
-    displayDetails(specieObj);
-  };
+
 })
+
 
 

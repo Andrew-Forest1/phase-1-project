@@ -1,14 +1,14 @@
 
 .pictures {
     flex: 0 1 auto;
-    height: 150px;
+    height: 10rem;
     margin-right: 0.5rem;
     cursor: pointer;
   }
 
 .hover {
     flex: 0 1 auto;
-    height: 200px;
+    height: 15rem;
     margin-right: 0.5rem;
     cursor: pointer;
 }
@@ -27,12 +27,14 @@ body {
   align-items: center;
 }
 
+
+
 form {
   margin: 1rem 0;
   width: 300px;
   display: flex;
   flex-direction: column;
-  column-count: 2;
+  background-color: #0000008a;
   align-items: flex-start;
   
 }
@@ -67,14 +69,16 @@ form h4 {
   color: white;
   background-color: black;
 }
+
 #detail-image{
-  
-  height: 300px;
+  height: 25rem;
 }
+
 .details {
   display: float;
   border-style: solid;
   border-radius: 1rem;
+
   font-style: bold;
   color: whitesmoke;
   background-attachment: fixed;
@@ -82,19 +86,34 @@ form h4 {
   text-align:center;
   font-family:'Archivo Narrow', sans-serif;
   padding: 30px;
-  
-  
+
 }
+
 .line {
   border-bottom: 5px solid white;
   display: block;
+  padding : 100px;
+} 
 
+h2{
+  font-size: 3rem;
+  font-weight: 300;
+  font-family: fantasy;
+  background-color: #000000b9;
 }
+
+table{
+  font-size: 2rem;
+  font-weight: 300;
+  background-color: #000000b9;
+}
+
 .name{
   font-weight: bold;
   font-size: 1.5rem;
   font: black;
 }
+
 .card {
   text-align: center;
   border: grey solid 2px;
@@ -105,6 +124,5 @@ form h4 {
   display: inline-grid;
   margin: 1rem 1rem; 
   box-shadow: 5px 7px #fcfcfc
-  
-  
 }
+
