@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("http://localhost:3000/species")
     .then((res) => res.json())
     .then((data) => data.forEach(renderSpecies));
-    
+
     specieForm.addEventListener('submit', (e) => {
         e.preventDefault()
         //debugger
@@ -54,7 +54,9 @@ document.addEventListener("DOMContentLoaded", () => {
         newImg.innerText = specieObj.name
         newImg.src = specieObj.image
         newImg.alt = specieObj.name
-        newImg.classList.add("card")
+
+        newImg.classList.add('card')
+
         newImg.classList.add('pictures')
 
 
@@ -108,6 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // speciesDetails.appendChild(newImg);
   };
 
-});
+})
 
-console.log("yo");
+
+

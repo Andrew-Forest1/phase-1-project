@@ -3,14 +3,36 @@
   <head>
     <meta charset="utf-8" />
     <title>Star Wars</title>
+    <style>
+    
+   
+      div.scroll {
+        width: 200px;
+        height: 250px;
+        overflow-x: scroll;
+        overflow-y: auto;
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+        color: yellow;
+        float: right;
+  
+      }
+    </style>
+    <div>
+    <img id="title" src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Star_Wars_Logo..png" alt="logo" />
     <script  src="./index.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
-    <div id="container">
-        
     </div>
-
+  </head>
+  
+  <body>
+    
+    <div id="container" class="character-container">
+      <span class="line"></span>
+        
+  </div>
+  
     <div id="species-detail" class="details"> 
       
       <!-- This Block displays the Details of the species selected, still needs work and is currently hard coded -->
@@ -80,12 +102,13 @@
             <td id="skin-colors">skin_colors: gray</td>
           </tr>
         </table>
+
       </div>
     </div>
-
+    
     <!-- <Img id="R2-D2" class="pictures" src="./R2-D2.png" alt="R2-D2 picture"></Img>
     <Img class="pictures" src="./Luke Skywalker.png" alt="Luke Skywalker picture"></Img> -->
-
+  <div class="form">
     <form id="new-species">
       <h4>Add New Species</h4>
       <label for="name">Name: </label>
@@ -116,6 +139,7 @@
       <input type="text" name="image" id="new-image" />
       <input type="submit" value="Create" />
     </form>
-
+  </div>
   </body>
+
 </html>
