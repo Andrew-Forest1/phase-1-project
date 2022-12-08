@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   fetch("http://localhost:3000/species")
     .then((res) => res.json())
-    .then((data) => data.forEach(renderSpecies));
+    .then((data) => loadPage(data));
 
     specieForm.addEventListener('submit', (e) => {
         e.preventDefault()
@@ -56,6 +56,11 @@ document.addEventListener("DOMContentLoaded", () => {
         
     })
 
+    const loadPage = (data) => {
+        data.forEach(renderSpecies)
+        displayDetails(data[0])
+    }
+
     const renderSpecies = (specieObj) => {
         const newImg = document.createElement('img')
         //console.log(specieObj)
@@ -70,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         newImg.addEventListener("click", ()=> displayDetails(specieObj));
-        displayDetails(specieObj)
+        
 
         newImg.addEventListener("mouseleave", (e) => {
           e.target.classList.remove("hover");
@@ -112,11 +117,28 @@ document.addEventListener("DOMContentLoaded", () => {
     hairColor.innerText = specieObj.hair_colors;
     homeWorld.innerText = specieObj.homeworld;
     language.innerText = specieObj.language;
-    // people.innerText = specieObj.people
+    //people.innerText = displayPerson(specieObj.people[0])
     // films.innerText = specieObj.films
     skinColor.innerText = specieObj.skin_colors;
     // speciesDetails.appendChild(newImg);
   };
+
+async function displayPerson(url){
+    const response = await fetch(url)
+    const data = await response.json()
+
+    return data.name
+/*     const something = (person) => {
+        name = person.name
+        console.log(person.name)
+    } */
+
+/*     fetch(url)
+    .then(res => res.json())
+    .then(person => something(person))
+    console.log(name) */
+    //return name
+  }
 
 })
 
