@@ -4,142 +4,121 @@
     <meta charset="utf-8" />
     <title>Star Wars</title>
     <style>
-    
-   
-      div.scroll {
-        width: 200px;
-        height: 250px;
-        overflow-x: scroll;
-        overflow-y: auto;
+      div.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: -999;
+        padding: 50px;
         text-align: center;
-        padding: 20px;
-        font-size: 20px;
-        color: yellow;
-        float: right;
-  
-      }
+        font-size: 150px;
+        margin-bottom: -70px;
+    }
+   
+
     </style>
+
     <div>
-    <img id="title" src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Star_Wars_Logo..png" alt="logo" />
-    <script  src="./index.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+      <img id="title" src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Star_Wars_Logo..png" alt="logo" />
+      <script  src="./index.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css" />
     </div>
   </head>
   
   <body>
-    
     <div id="container" class="character-container">
       <span class="line"></span>
-        
-  </div>
+    </div>
   
     <div id="species-detail" class="details"> 
-      
-      <!-- This Block displays the Details of the species selected, still needs work and is currently hard coded -->
-<!--       <div class="detail_txt">
-      <img id="detail-image" src="./Luke Skywalker.png" alt="picture"/>
-        <h2 id="name" class="name">Wookie</h2>
-        <p id="height">average_height: 2.1</p>
-        <p id="lifespan">average_lifespan: 400</p>
-        <p id="classification">classification: Mammal</p>
-        <p id="designation">designation: Sentient</p>
-        <p id="eye-color">eye_colors: blue, green, yellow, brown, golden, red</p>
-        <p id="hair-color">hair_colors: blck, brown</p>
-        <p id="homeworld">homeworld: </p>
-        <p id="language">language: "shyriiwook</p>
-        <p id="people">people: </p>
-        <p id="films">films: </p>
-        <p id="skin-colors">skin_colors: gray</p>
-      </div>
-    </div> -->
 
-    <div class="detail_txt">
-      <img id="detail-image" src="./Luke Skywalker.png" alt="picture"/>
+      <div class="detail_txt">
         <h2 id="name" class="name">Wookie</h2>
-        <table>
-          <tr>
-            <td>Average Height</td>
-            <td id="height">average_height: 2.1</td>
-          </tr>
-          <tr>
-            <td>Average Lifespan</td>
-            <td id="lifespan">average_lifespan: 400</td>
-          </tr>
-          <tr>
-            <td>classification</td>
-            <td id="classification">classification: Mammal</td>
-          </tr>
-          <tr>
-            <td>Designation:</td>
-            <td id="designation">designation: Sentient</td>
-          </tr>
-          <tr>
-            <td>Eye Colors</td>
-            <td id="eye-color">eye_colors: blue, green, yellow, brown, golden, red</td>
-          </tr>
-          <tr>
-            <td>Hair Colors</td>
-            <td id="hair-color">hair_colors: blck, brown</td>
-          </tr>
-          <tr>
-            <td>Homeworld</td>
-            <td id="homeworld">homeworld: </td>
-          </tr>
-          <tr>
-            <td>Language</td>
-            <td id="language">language: "shyriiwook</td>
-          </tr>
-          <tr>
-            <td>People</td>
-            <td id="people">people: </td>
-          </tr>
-          <tr>
-            <td>Films</td>
-            <td id="films">films: </td>
-          </tr>
-          <tr>
-            <td>Skin Colors</td>
-            <td id="skin-colors">skin_colors: gray</td>
-          </tr>
-        </table>
+        <img id="detail-image" src="./Luke Skywalker.png" alt="picture"/>
 
+        <div class="scroll">
+          <table>
+            <tr>
+              <td>Average Height:</td>
+              <td id="height">average_height: 2.1</td>
+            </tr>
+            <tr>
+              <td>Average Lifespan:</td>
+              <td id="lifespan">average_lifespan: 400</td>
+            </tr>
+            <tr>
+              <td>Classification:</td>
+              <td id="classification">classification: Mammal</td>
+            </tr>
+            <tr>
+              <td>Designation:</td>
+              <td id="designation">designation: Sentient</td>
+            </tr>
+            <tr>
+              <td>Eye Colors:</td>
+              <td id="eye-color">eye_colors: blue, green, yellow, brown, golden, red</td>
+            </tr>
+            <tr>
+              <td>Hair Colors:</td>
+              <td id="hair-color">hair_colors: blck, brown</td>
+            </tr>
+            <tr>
+              <td>Homeworld:</td>
+              <td id="homeworld">homeworld: </td>
+            </tr>
+            <tr>
+              <td>Language:</td>
+              <td id="language">language: "shyriiwook</td>
+            </tr>
+            <tr>
+              <td>People:</td>
+              <td id="people">people: </td>
+            </tr>
+            <tr>
+              <td>Films:</td>
+              <td id="films">films: </td>
+            </tr>
+            <tr>
+              <td>Skin Colors:</td>
+              <td id="skin-colors">skin_colors: gray</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
     
-    <!-- <Img id="R2-D2" class="pictures" src="./R2-D2.png" alt="R2-D2 picture"></Img>
-    <Img class="pictures" src="./Luke Skywalker.png" alt="Luke Skywalker picture"></Img> -->
-  <div class="form">
-    <form id="new-species">
-      <h4>Add New Species</h4>
-      <label for="name">Name: </label>
-      <input type="text" name="name" id="new-name" />
-      <label for="averageHeight">Average Height: </label>
-      <input type="text" name="averageHeight" id="averageHeight" />
-      <label for="averageLifespan">Average Lifespan: </label>
-      <input type="text" name="averageLifespan" id="averageLifespan" />
-      <label for="classification">Classification: </label>
-      <input type="text" name="classification" id="classification" />
-      <label for="designation">Designation: </label>
-      <input type="text" name="designation" id="designation" />
-      <label for="eyeColors">Eye Colors: </label>
-      <input type="text" name="eyeColors" id="eyeColors" />
-      <label for="hairColors">Hair Colors: </label>
-      <input type="text" name="hairColors" id="hairColors" />
-      <label for="homeworld">Homeworld: </label>
-      <input type="text" name="homeworld" id="homeworld" />
-      <label for="language">language: </label>
-      <input type="text" name="language" id="language" />
-      <label for="people">people: </label>
-      <input type="text" name="people" id="people" />
-      <label for="films">films: </label>
-      <input type="text" name="films" id="films" />
-      <label for="skinColors">Skin Colors: </label>
-      <input type="text" name="skinColors" id="skinColors" />
-      <label for="image">Image: </label>
-      <input type="text" name="image" id="new-image" />
-      <input type="submit" value="Create" />
-    </form>
-  </div>
+    <h4 id="formHeader">Add New Species</h4>
+    <div id="formDiv" class="form">
+      <form id="new-species">
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="new-name" />
+        <label for="averageHeight">Average Height: </label>
+        <input type="text" name="averageHeight" id="averageHeight" />
+        <label for="averageLifespan">Average Lifespan: </label>
+        <input type="text" name="averageLifespan" id="averageLifespan" />
+        <label for="classification">Classification: </label>
+        <input type="text" name="classification" id="classification" />
+        <label for="designation">Designation: </label>
+        <input type="text" name="designation" id="designation" />
+        <label for="eyeColors">Eye Colors: </label>
+        <input type="text" name="eyeColors" id="eyeColors" />
+        <label for="hairColors">Hair Colors: </label>
+        <input type="text" name="hairColors" id="hairColors" />
+        <label for="homeworld">Homeworld: </label>
+        <input type="text" name="homeworld" id="homeworld" />
+        <label for="language">language: </label>
+        <input type="text" name="language" id="language" />
+        <label for="people">people: </label>
+        <input type="text" name="people" id="people" />
+        <label for="films">films: </label>
+        <input type="text" name="films" id="films" />
+        <label for="skinColors">Skin Colors: </label>
+        <input type="text" name="skinColors" id="skinColors" />
+        <label for="image">Image: </label>
+        <input type="text" name="image" id="new-image" />
+        <input type="submit" value="Create" />
+      </form>
+    </div>
   </body>
 
 </html>

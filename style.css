@@ -27,8 +27,6 @@ body {
   align-items: center;
 }
 
-
-
 form {
   margin: 1rem 0;
   width: 300px;
@@ -36,7 +34,6 @@ form {
   flex-direction: column;
   background-color: #0000008a;
   align-items: flex-start;
-  
 }
 
 input,
@@ -62,23 +59,26 @@ input[type="submit"]:active {
   background-color: gray;
 }
 
-form h4 {
-  width: 100%;
+h4 {
+  width: 50%;
   padding: 0.25rem;
   margin: 0.5rem 0;
+  font-size: 2rem;
   color: white;
   background-color: black;
+  border: #fafafa;
+  border-style: solid;
+  border-radius: 1rem;
 }
 
 #detail-image{
-  height: 25rem;
+  height: 20rem;
 }
 
 .details {
   display: float;
   border-style: solid;
   border-radius: 1rem;
-
   font-style: bold;
   color: whitesmoke;
   background-attachment: fixed;
@@ -95,24 +95,16 @@ form h4 {
   padding : 100px;
 } 
 
-h2{
-  font-size: 3rem;
-  font-weight: 300;
-  font-family: fantasy;
-  background-color: #000000b9;
-}
-
 table{
   font-size: 2rem;
   font-weight: 300;
-  background-color: #000000b9;
 }
 
-.name{
+/* .name{
   font-weight: bold;
   font-size: 1.5rem;
   font: black;
-}
+} */
 
 .card {
   text-align: center;
@@ -126,3 +118,29 @@ table{
   box-shadow: 5px 7px #fcfcfc
 }
 
+h2{
+  font-size: 3rem;
+  font-weight: normal;
+  color: yellow;
+  font-family: fantasy;
+  padding: 0rem;
+  margin: 0rem 0rem; 
+}
+
+div.scroll {
+  width: 500px;
+  height: 250px;
+  overflow-x: scroll;
+  overflow-y: auto;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  color: yellow;
+  float: right;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+div.scroll::-webkit-scrollbar {
+  display: none;
+}

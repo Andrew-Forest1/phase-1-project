@@ -16,7 +16,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const films = document.getElementById("films");
   const skinColor = document.getElementById("skin-colors");
   const specieForm = document.getElementById("new-species");
+  const formHeader = document.getElementById("formHeader");
+  const formDiv = document.getElementById("formDiv");
 
+  formDiv.hidden = true;
+
+  formHeader.addEventListener('click', () => {
+    formDiv.hidden = !formDiv.hidden
+    console.log(formDiv.hidden)
+  })
 
   fetch("http://localhost:3000/species")
     .then((res) => res.json())
