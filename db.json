@@ -265,7 +265,7 @@
       "hair_colors": "none",
       "eye_colors": "red, pink",
       "average_lifespan": "unknown",
-      "homeworld": "Cato Neimoidia",
+      "homeworld": "\"https://swapi.dev/api/planets/18/\"",
       "language": "Neimoidia",
       "people": [
         "Alluv Eyam"
@@ -276,15 +276,7 @@
       "created": "2014-12-10T13:52:11.567000Z",
       "edited": "2014-12-20T21:36:42.136000Z",
       "url": "https://swapi.dev/api/species/1/",
-      "id": "6aru2da"
+      "id": "JnjINpR"
     }
   ]
 }
-   
-    
-    
-    
-  
-  
-  
-  

@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   formHeader.addEventListener('click', () => {
     formDiv.hidden = !formDiv.hidden
-    console.log(formDiv.hidden)
   })
 
   fetch("http://localhost:3000/species")
@@ -104,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(data => renderSpecies(data))
     }
 
-  const displayDetails = (specieObj) => {
+  const displayDetails = async (specieObj) => {
     const detailImg = document.getElementById("detail-image");
     detailImg.src = specieObj.image;
     speciesName.innerText = specieObj.name;
@@ -117,10 +116,9 @@ document.addEventListener("DOMContentLoaded", () => {
     hairColor.innerText = specieObj.hair_colors;
     homeWorld.innerText = specieObj.homeworld;
     language.innerText = specieObj.language;
-    //people.innerText = displayPerson(specieObj.people[0])
-    // films.innerText = specieObj.films
+    people.innerText = await displayPerson(specieObj.people[0])
+    films.innerText = await displayFilm(specieObj.films[0])
     skinColor.innerText = specieObj.skin_colors;
-    // speciesDetails.appendChild(newImg);
   };
 
 async function displayPerson(url){
@@ -128,17 +126,14 @@ async function displayPerson(url){
     const data = await response.json()
 
     return data.name
-/*     const something = (person) => {
-        name = person.name
-        console.log(person.name)
-    } */
-
-/*     fetch(url)
-    .then(res => res.json())
-    .then(person => something(person))
-    console.log(name) */
-    //return name
   }
+
+async function displayFilm(url){
+    const response = await fetch(url)
+    const data = await response.json()
+
+    return data.title
+    }
 
 })
 
