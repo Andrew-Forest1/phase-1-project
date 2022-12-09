@@ -117,7 +117,9 @@ document.addEventListener("DOMContentLoaded", () => {
     homeWorld.innerText = specieObj.homeworld;
     language.innerText = specieObj.language;
     people.innerText = await displayPerson(specieObj.people[0])
+    people.href = specieObj.people[0]
     films.innerText = await displayFilm(specieObj.films[0])
+    films.href = specieObj.films[0]
     skinColor.innerText = specieObj.skin_colors;
   };
 
